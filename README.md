@@ -13,4 +13,4 @@ The firmware runs two independent tasks in parallel:
 - ESP32-C6 DevKit
 - Breadboard
 - LED
-- Hobby servo motor (PWM-controlled)
+- Servo motor
