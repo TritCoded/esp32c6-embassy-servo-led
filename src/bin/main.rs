@@ -20,11 +20,11 @@ use esp_hal::gpio::{Level, Output, OutputConfig};
 
 esp_bootloader_esp_idf::esp_app_desc!();
 
-#[embassy_executor::task(pool_size = 4)]
+#[embassy_executor::task]
 async fn blink(mut led: Output<'static>){
     loop {
         led.toggle();
-        Timer::after(Duration::from_millis(250)).await;
+        Timer::after(Duration::from_millis(500)).await; // should blink 2x per second
     }
 }
 
@@ -32,7 +32,7 @@ async fn blink(mut led: Output<'static>){
 async fn servo_task(mut servo_pin: Output<'static>) {
     let pulse_min = 1000;      // min servo angle 
     let pulse_max = 2000;      // max servo angle
-    let step_size = 15;      // rotation size per step
+    let step_size = 15;      // rotation size
     let delay_ms = 10;         // update speed in milliseconds
     
     loop {
