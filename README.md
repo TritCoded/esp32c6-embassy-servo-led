@@ -14,3 +14,9 @@ The firmware runs two independent tasks in parallel:
 - Breadboard
 - LED
 - Servo motor
+- 300 Ohm resistor
+
+## GPIO
+
+Servo control -> GPIO4
+LED -> 300 Ohm resistor -> GPIO2
