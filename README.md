@@ -22,3 +22,6 @@ Servo signal -> GPIO4
 LED -> 300 Ohm resistor -> GPIO2
 
 ## Showcase
+
+https://github.com/user-attachments/assets/70ed4081-4a8f-4981-9a45-955ebc8f87ff
+
