@@ -13,10 +13,12 @@ The firmware runs two independent tasks in parallel:
 - ESP32-C6 DevKit
 - Breadboard
 - LED
-- Servo motor
 - 300 Ohm resistor
+- Servo motor
 
 ## GPIO
+Servo signal -> GPIO4
 
-Servo control -> GPIO4
 LED -> 300 Ohm resistor -> GPIO2
+
+## Showcase
